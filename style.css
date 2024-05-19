@@ -399,7 +399,7 @@ span {
 
 .services {
     background: var(--bg-color);
-    color: black;
+    color: var(--text-color);
 }
 
 .services h2 {
@@ -415,7 +415,7 @@ span {
 }
 
 .services-box {
-    background-color: var(--main-color);
+    background-color: var(--second-bg-color);
     height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
@@ -424,8 +424,8 @@ span {
 }
 
 .services-box:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     border:  5px solid var(--main-color);
     transform: scale(1.03);
 }
@@ -570,6 +570,12 @@ span {
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
+
+.contact form .input-box input::placeholder,
+.contact form textarea::placeholder {
+    color: white;
+}
+
 
 .footer {
     position: relative;
